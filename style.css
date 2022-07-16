@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #fcefef;
+}
+
+.container{
+    max-width: 600px;
+    height: auto;
+    background-color: #dbb7b9;
+    border-radius: 20px;
+    border: 10px solid rgba(0, 0, 0, 0.158);
+    margin: 15px 20px;
+    position: relative;
+}
+
+.container h1{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3rem;
+}
+
+.container .linha{
+    margin: 30px 0;
+    border-bottom: 3px dashed #664b4a;
+    width: 100%;
+}
+
+.container .imgs img{
+    display: flex;
+    width: 60px;
+    position: absolute;
+    left: 50px;
+    top: -35px;
+}
+
+.container .conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.conteudo .img img{
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+.conteudo .ul .li{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.conteudo .ul .li .linha-li{
+    display: flex;
+    align-items: center;
+    background-color: #fcf5f5;
+    width: 95%;
+    font-size: 1.5rem;
+    height: auto;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.conteudo .ul .li .linha-li:hover{
+    transform: scale(1.03);
+    background-color: #fff;
+}
+
+.conteudo .ul .li i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #fcf5f5;
+    transition: 1s;
+}
+
+@keyframes lixeira{
+    0%{transform: rotateZ(0deg);}
+    20%{transform: rotateZ(-20deg);}
+    40%{transform: rotateZ(20deg);}
+    60%{transform: rotateZ(-20deg);}
+    80%{transform: rotateZ(20deg);}
+    100%{transform: rotateZ(-20deg);}
+}
+
+.conteudo .ul .li i:hover{
+    color: #fff;
+    animation: lixeira .3s linear;
+}
+
+.conteudo .input .digitar{
+    color: #000;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #eddedf;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo .input input::placeholder{
+    color: #9b9999;
+
+}
+
